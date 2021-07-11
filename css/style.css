@@ -194,6 +194,8 @@ img {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 
 .hotel-name {
