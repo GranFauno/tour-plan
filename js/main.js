@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -6,8 +6,28 @@ const swiper = new Swiper('.swiper-container', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--next',
+    prevEl: '.hotel-slider__button--prev',
+  },
+  // Keyboard navigation
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+    pageUpDown: true,
+  },
+
+});
+
+const reviewSlider = new Swiper('.review-slider', {
+  // Optional parameters
+  loop: true,
+
+ 
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.review-slider__button--next',
+    prevEl: '.review-slider__button--prev',
   },
   // Keyboard navigation
   keyboard: {
