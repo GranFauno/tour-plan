@@ -775,6 +775,252 @@ img {
   cursor: pointer;
 }
 
+.other-pakages {
+  padding-top: 110px;
+  padding-bottom: 70px;
+}
+
+.other-pakages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-gap: 1em;
+}
+
+.other-pakages__title {
+  margin: 0;
+  margin-bottom: 65px;
+  color: #000;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pakages-card:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/ span 2;
+}
+
+.pakages-card {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pakages-card__img--main {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 500px;
+  max-width: 50%;
+}
+
+.pakages-card--secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-negative: 10;
+      flex-shrink: 10;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+
+.pakages-card__tag {
+  position: absolute;
+  padding: 8px 11px;
+  background-color: #EC1F46;
+  color: #fff;
+  z-index: 1;
+  top: 28px;
+  left: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.pakages-card__tag--secondary {
+  position: absolute;
+  background-color: #EC1F46;
+  color: #fff;
+  z-index: 1;
+  padding: 4px 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 10px;
+  top: 26px;
+  left: 0;
+}
+
+.pakages-card__rating {
+  margin-bottom: 5px;
+}
+
+.pakages-card__icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 14px;
+}
+
+.pakages-card__title {
+  margin: 0;
+  margin-bottom: 27px;
+  color: #fff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.pakages-card__title--secondary {
+  margin: 0;
+  color: #fff;
+  margin-bottom: 23px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.pakages-card__text {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.pakages-card__paragraph {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 34px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+}
+
+.pakages-card__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pakages-card__info {
+  background-color: #0A223D;
+  height: 100%;
+  padding: 30px 32px 30px 21px;
+}
+
+.pakages-card__info--main {
+  padding: 46px 26px 35px 45px;
+  max-height: 500px;
+  background-color: #0A223D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pakages-card-room {
+  margin-bottom: 37px;
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pakages-card-room--secondary {
+  margin-bottom: 24px;
+  height: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pakages-card-booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pakages-card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.pakages-card__old-price {
+  text-decoration: line-through;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.pakages-card__new-price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.pakages-card__button {
+  border: none;
+  color: #fff;
+  background-color: #EC1F46;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  font-family: Nunito, sans-serif;
+  border-radius: 4px;
+  padding: 10px 26px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1135,6 +1381,29 @@ template {
     width: 230px;
     height: 230px;
   }
+  .pakages-card__title {
+    margin-bottom: 17px;
+    font-size: 16px;
+  }
+  .pakages-card__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 35px;
+  }
+  .other-pakages {
+    padding-top: 80px;
+  }
+  .other-pakages__title {
+    font-size: 32px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1196,6 +1465,17 @@ template {
   .card {
     width: 340px;
     height: 250px;
+  }
+  .other-pakages {
+    padding-top: 60px;
+  }
+  .other-pakages-wrapper {
+    -ms-grid-columns: (minmax(250px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+  .other-pakages__title {
+    font-size: 28px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1325,6 +1605,9 @@ template {
     padding-top: 40px;
     padding-bottom: 60px;
   }
+  .pakages-card__info--main {
+    padding: 20px 20px 20px 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1340,11 +1623,50 @@ template {
   .card {
     width: 100%;
   }
+  .pakages-card--secondary {
+    max-height: 420px;
+  }
+  .pakages-card-room {
+    margin-bottom: 27px;
+  }
+  .pakages-card__paragraph {
+    margin-bottom: 24px;
+  }
+  .pakages-card__info {
+    padding: 25px 20px 20px 21px;
+    max-height: 290px;
+  }
+  .pakages-card__info--main {
+    padding: 20px 20px 30px 30px;
+  }
+  .pakages-card__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pakages-card__img--main {
+    max-width: 100%;
+    max-height: 400px;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     max-width: 95%;
+  }
+  .pakages-card__main {
+    display: none;
+  }
+  .other-pakages-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1em;
   }
   .review__title {
     font-size: 18px;
@@ -1352,6 +1674,27 @@ template {
     margin: auto;
     margin-bottom: 42px;
     width: 250px;
+  }
+  .pakages-card-price {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pakages-card-booking {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 95px;
+  }
+  .pakages-card__title--secondary {
+    text-align: center;
+  }
+  .pakages-card-room--secondary {
+    margin-bottom: 15px;
   }
 }
 
@@ -1388,6 +1731,16 @@ template {
     font-size: 30px;
     line-height: 38px;
     font-style: normal;
+  }
+  .pakages-card--secondary {
+    max-height: 470px;
+  }
+  .other-pakages {
+    padding-top: 30px;
+  }
+  .other-pakages__title {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
