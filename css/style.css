@@ -68,6 +68,10 @@ img {
   color: #fff;
 }
 
+.navbar-menu__item_mobile_visible {
+  display: none;
+}
+
 .navbar-menu__link {
   color: inherit;
   text-decoration: none;
@@ -1718,10 +1722,63 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .container .navbar__search, .container .navbar-menu, .container .navbar__user {
+  body {
+    padding-top: 78px;
+  }
+  .user__name_light {
+    color: #fff;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar-bottom {
+    display: none;
+    padding-top: 38px;
+  }
+  .navbar-bottom_visible {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 78px;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: block;
+  }
+  .navbar__search, .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar__search_mobile_hidden, .navbar__user_mobile_hidden {
     display: none;
   }
-  .container .navbar-top__menu-button {
+  .navbar__search_mobile_visible, .navbar__user_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-top__menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1742,15 +1799,15 @@ template {
     cursor: pointer;
     padding: 0;
   }
-  .container .menu-button__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
   }
-  .container .logo {
+  .logo {
     max-width: 132px;
   }
-  .container .hotel-slider {
+  .hotel-slider {
     height: 350px;
   }
   .hotel-wrapper {
