@@ -80,7 +80,7 @@
     &-packages
       padding-top: 60px
       &-wrapper
-        grid-template-columns: repeat( 2 , minmax(250px, 1fr))
+        grid-template-columns: repeat( 2 , minmax(220px, 1fr))
       &__title
         font-size: 28px
         margin-bottom: 40px
@@ -262,7 +262,14 @@
   .packages
     &-card
       &--secondary
-        max-height: 420px
+        max-height: 450px
+        flex-direction: column
+      &-booking
+        flex-direction: column
+      &-price
+        align-items: center
+      &__new-price
+        margin-bottom: 10px
       &-room
         margin-bottom: 27px
       &__paragraph
@@ -333,6 +340,8 @@
       width: 250px
   .packages
     &-card
+      &--secondary
+        max-height: 530px
       &-price
         align-items: center
       &-booking

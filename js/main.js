@@ -1,4 +1,6 @@
-const hotelSlider = new Swiper('.hotel-slider', {
+$(document).ready(function()
+{
+  const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -43,4 +45,24 @@ menuButton.addEventListener("click", function(){
   document
   .querySelector(".navbar-bottom")
   .classList.toggle("navbar-bottom_visible");
-})
+});
+
+  var modalButton=$('[data-toggle="modal"]');
+  var closeModalButton=$('.modal__close');
+  closeModalButton.on('click', closeModal);
+  
+  
+  function closeModal(event){
+    event.preventDefault();    
+    var modalOverlay=$(".modal__overlay");
+    var modalDialog=$(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+  };  
+  modalButton.on('click', openModal);
+  function openModal(){
+    var targetModal=$(this).attr("data-href");
+      $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+      $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+    }
+});
