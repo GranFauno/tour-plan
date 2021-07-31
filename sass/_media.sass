@@ -120,7 +120,11 @@
         grid-row: 4
         grid-column: span 5
   .button
-    pointer-events: none
+    &:hover
+      background-color: $primary-color
+  .modal
+    &__dialog
+      padding: 20px 30px
 
 @media (max-width: 768px)
   .container
@@ -221,6 +225,7 @@
   .modal
     &__dialog
       padding: 20px 30px
+      width: 90%
     &__button
       margin-bottom: 8px
   .newsletter
