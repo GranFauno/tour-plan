@@ -11,7 +11,10 @@
         width: 100%
   .footer
     &__input
-      flex-basis: 100%
+      width: 100%
+      &-group
+        margin-bottom: 15px
+        flex-basis: 48%
   .card
     width: 230px
     height: 230px
@@ -80,13 +83,16 @@
     &-packages
       padding-top: 60px
       &-wrapper
-        grid-template-columns: repeat( 2 , minmax(250px, 1fr))
+        grid-template-columns: repeat( 2 , minmax(220px, 1fr))
       &__title
         font-size: 28px
         margin-bottom: 40px
   .footer
     &__input
-      flex-basis: 48%
+      width: 100%
+      &-group
+        margin-bottom: 15px
+        flex-basis: 48%
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -113,6 +119,8 @@
       &-form
         grid-row: 4
         grid-column: span 5
+  .button
+    pointer-events: none
 
 @media (max-width: 768px)
   .container
@@ -127,8 +135,8 @@
         margin-left: 0
         margin-top: 10px
   .navbar
-    &__mobile
-      &_fixed
+    &--mobile
+      &-fixed
         position: fixed
         left: 0
         top: 0
@@ -210,6 +218,11 @@
     flex-direction: column
     max-width: 576px
     width: 92%
+  .modal
+    &__dialog
+      padding: 20px 30px
+    &__button
+      margin-bottom: 8px
   .newsletter
     &-title
       &__text
@@ -246,8 +259,21 @@
         &--main
           padding: 20px 20px 20px 30px
   .footer
+    &__form
+      flex-direction: column
+      align-items: flex-start
+    &__message
+      width: 100%
+      min-height: 125px
+    &__info
+      margin-bottom: 15px
+    &__button
+      order: 1
     &__input
-      flex-basis: 100%
+      width: 100%
+      &-group
+        margin-bottom: 15px
+        width: 100%
 
 @media (max-width: 576px)
   .logo
@@ -262,7 +288,14 @@
   .packages
     &-card
       &--secondary
-        max-height: 420px
+        max-height: 450px
+        flex-direction: column
+      &-booking
+        flex-direction: column
+      &-price
+        align-items: center
+      &__new-price
+        margin-bottom: 10px
       &-room
         margin-bottom: 27px
       &__paragraph
@@ -279,6 +312,13 @@
         &--main
           max-width: 100%
           max-height: 400px
+  .newsletter
+    &-wrapper
+      align-items: flex-start
+  .subscribe
+    width: 100%
+    &__button
+      width: 150px
   .footer
     &-wrapper
       grid-template-columns: 1fr
@@ -312,6 +352,32 @@
       &-form
         grid-row: 7
         grid-column: 1
+@media ( max-height: 576px ) and (orientation: landscape)
+  .navbar
+    &-bottom
+      &_visible
+        overflow: auto
+  .modal
+    &__dialog
+      width: 90%
+      height: 100%
+      padding: 20px 30px
+      overflow: auto
+    &__title
+      &--mb
+        &-3
+          margin: 0
+    &__button
+      min-width: 290px
+@media ( max-height: 480px ) and (orientation: landscape)
+  .modal
+    &__dialog
+      overflow: auto
+      width: 100%
+    &__button
+      width: 100%
+      margin-bottom: 10px
+
 @media (max-width: 480px)
   .container
     max-width: 95%
@@ -333,6 +399,8 @@
       width: 250px
   .packages
     &-card
+      &--secondary
+        max-height: 530px
       &-price
         align-items: center
       &-booking
@@ -345,6 +413,12 @@
       &-room
         &--secondary
           margin-bottom: 15px
+  .footer
+    &__input
+      width: 100%
+      &-group
+        margin-bottom: 15px
+        flex-basis: 100%
 
 @media (max-width: 320px)
   .container
@@ -379,3 +453,8 @@
       &__title
         font-size: 24px
         margin-bottom: 20px
+  .footer
+    &-policy
+      margin-top: 30px
+      &__item
+        margin-right: 13px

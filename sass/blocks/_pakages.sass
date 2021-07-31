@@ -34,7 +34,7 @@
     border-radius: 8px
     overflow: hidden
     position: relative
-    height: 500px
+    max-height: 530px
 
   &__tag
     position: absolute
@@ -98,7 +98,9 @@
     font-weight: normal
     font-size: 14px
     line-height: 160.6%
-  &__main
+    max-height: 160px
+    overflow: auto
+  &--main
     display: flex
   &__info
     background-color: $dark
